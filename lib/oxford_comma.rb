@@ -10,7 +10,7 @@ def oxford_comma(array)
     array.join(" and ")
   else
     # last = array.slice(-1) # This would cause the last element to be repeated.
-    last = array.pop
+    last = array.pop # This works, but it's also destructive!
     array.join(", ") + ", and " + last
   end
   
