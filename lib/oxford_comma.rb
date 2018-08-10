@@ -1,8 +1,9 @@
 def oxford_comma(array)
-  # Note that I'm not expecting an empty array.
   
   case array.size 
   
+  when 0 # Not necessary per se, but it covers an edge case.
+    array[0]
   when 1 
     array[0]
   when 2 
