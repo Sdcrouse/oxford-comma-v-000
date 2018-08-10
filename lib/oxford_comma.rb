@@ -9,8 +9,8 @@ def oxford_comma(array)
   when 2 
     array.join(" and ")
   else
-    # last = array.pop # This is destructive!
-    last = array.slice(-1) # This is non-destructive.
+    last = array.pop # This is destructive!
+    # last = array.slice(-1) # This would cause the last element to be repeated.
     array.join(", ") + ", and " + last
   end
   
